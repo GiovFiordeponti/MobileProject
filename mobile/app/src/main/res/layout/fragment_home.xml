@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:labelFor="@string/play"
+    android:visibility="visible"
+    tools:context=".fragments.HomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/simple_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="400dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/pong_logo_2"
+            android:translationY="-80dp" />
+
+        <Button
+            android:id="@+id/play_button"
+            style="@style/PongButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:text="@string/play"
+            android:translationY="-50dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap_bold"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textSize="@dimen/text_size"
+            android:translationY="-20dp" />
+
+        <Button
+            android:id="@+id/login_fragment_button"
+            style="@style/PongButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:fontFamily="@font/asap_medium_italic"
+            android:text="@string/log_in"
+            android:translationY="10dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap_medium_italic"
+            android:gravity="center"
+            android:text="@string/not_register"
+            android:textSize="@dimen/text_size"
+            android:translationY="80dp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/register_fragment_button"
+            style="@style/PongButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:text="@string/sign_up"
+            android:translationY="90dp" />
+    </LinearLayout>
+    <!-- layout for auth user -->
+    <LinearLayout
+        android:id="@+id/auth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/Logo_auth"
+            android:layout_width="400dp"
+            android:layout_height="160dp"
+            android:src="@drawable/pong_logo_2"
+            android:translationY="@dimen/logo_offset" />
+
+        <TextView
+            android:id="@+id/welcome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_home"
+            android:layout_marginBottom="@dimen/margin_home"
+            android:fontFamily="@font/rye"
+            android:text="@string/welcome_back"
+            android:textColor="@color/textView"
+            android:textSize="@dimen/text_size_home"
+            android:translationY="@dimen/logo_offset" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/rye"
+            android:text="@string/challenge_ready"
+            android:textColor="@color/textView"
+            android:textSize="@dimen/text_size_home"
+            android:translationY="@dimen/logo_offset" />
+
+        <Button
+            android:id="@+id/play_button_random"
+            style="@style/PongButtonStyle"
+            android:layout_width="@dimen/button_home"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:text="@string/play"
+            android:translationY="80dp" />
+
+
+        <Button
+            android:id="@+id/play_friends_button"
+            style="@style/PongButtonStyle"
+            android:layout_width="@dimen/button_home"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:fontFamily="@font/asap_medium_italic"
+            android:text="@string/play_friends"
+            android:translationY="120dp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/floating_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_notification"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_button"
+                    android:drawableTop="@drawable/ic_notification"
+                    android:drawablePadding="0dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/button_requests"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_button"
+                    android:drawableTop="@drawable/ic_friends_request" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invite_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/invite_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/asap_medium_italic"
+                    android:gravity="center"
+                    android:text="@string/invite_friends"
+                    android:textSize="@dimen/text_size"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/button_invite_friends"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="@dimen/button_home"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="75dp"
+                    android:text="@string/invite_friend" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

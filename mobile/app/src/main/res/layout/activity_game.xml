@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:parentActivityName=".MainActivity"
+        android:screenOrientation="portrait"
+        tools:context=".GameActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/include_progress_bar" />
+    <TextView
+        android:id="@+id/my_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="130dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/rye"
+        android:textColor="@color/textView"
+        android:textSize="@dimen/text_size_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/rye"
+            android:text="@string/ready"
+            android:textColor="@color/textView"
+            android:textSize="@dimen/text_size_home"
+            app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enemy_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/rye"
+        android:text="@string/enemy"
+        android:textColor="@color/textView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enemy_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/rye"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enemy_code_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="350dp"
+        android:fontFamily="@font/rye"
+        android:text="@string/friend_code_label"
+        android:textColor="@color/textView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enemy_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="350dp"
+        android:fontFamily="@font/rye"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_copy_friend_code"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="335dp"
+        android:drawableTop="@drawable/ic_baseline_content_copy_24"
+        android:text="@string/copy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="414dp"
+        android:layout_height="731dp"
+        android:layout_marginTop="16dp"
+        android:alpha=".15"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+
+
+    <Button
+        android:id="@+id/ready"
+        style="@style/PongButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="470dp"
+        android:onClick="gameReady"
+        android:text="@string/ready_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/ready_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/rye"
+        android:text="@string/start_match"
+        android:textColor="@color/textView"
+        android:textSize="@dimen/text_size_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/racchetta_nera" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="280dp"
+        app:srcCompat="@drawable/racchetta_rossa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

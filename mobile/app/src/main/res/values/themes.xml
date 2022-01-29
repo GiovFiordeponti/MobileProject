@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SimpleGame" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button_color</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+    </style>
+    <style name="AppTheme.MyTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button_color</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar. -->
+        <item name="actionBarStyle">@style/MyTheme.ActionBar</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="MyTheme.ActionBar" parent="Widget.AppCompat.ActionBar">
+
+        <item name="elevation">0dp</item>
+        <item name="background">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:icon">@drawable/pong_logo_2</item>
+    </style>
+
+    <style name="PongButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/button_color</item>
+        <item name="android:fontFamily">@font/asap_medium_italic</item>
+    </style>
+
+    <style name="titleStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/asap_medium_italic</item>
+        <item name="android:textSize">@dimen/title</item>
+    </style>
+
+    <style name="article_Style" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/asap_medium_italic</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fontFamily">@font/asap_medium_italic</item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Rounded" parent="@android:style/Widget.Button">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+
+</resources>

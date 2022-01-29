@@ -1,0 +1,46 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="ball_entries">
+        <item>@string/ball_default_name</item>
+        <item>@string/ball_1_name</item>
+        <item>@string/ball_2_name</item>
+        <item>@string/ball_3_name</item>
+    </string-array>
+
+    <string-array name="ball_entries_values">
+        <item>@string/ball_default_name_file</item>
+        <item>@string/ball_1_name_file</item>
+        <item>@string/ball_2_name_file</item>
+        <item>@string/ball_3_name_file</item>
+    </string-array>
+
+    <string-array name="table_entries">
+        <item>@string/default_table</item>
+        <item>@string/table_1_name</item>
+        <item>@string/table_2_name</item>
+        <item>@string/table_3_name</item>
+    </string-array>
+
+    <string-array name="table_entries_values">
+        <item>@string/default_table_file</item>
+        <item>@string/table_1_file</item>
+        <item>@string/table_2_file</item>
+        <item>@string/table_3_file</item>
+    </string-array>
+
+    <string-array name="racket_entries">
+        <item>@string/default_racket</item>
+        <item>@string/racket_1_name</item>
+        <item>@string/racket_2_name</item>
+        <item>@string/racket_3_name</item>
+    </string-array>
+
+    <string-array name="racket_entries_values">
+        <item>@string/default_racket_file</item>
+        <item>@string/racket_1_name_file</item>
+        <item>@string/racket_2_name_file</item>
+        <item>@string/racket_3_name_file</item>
+    </string-array>
+
+
+</resources>

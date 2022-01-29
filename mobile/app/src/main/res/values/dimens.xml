@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="button_margin">60dp</dimen>
+    <dimen name="text_size">18dp</dimen>
+    <dimen name="text_size_home">20sp</dimen>
+    <dimen name="margin_home">15dp</dimen>
+    <dimen name="button_home">190dp</dimen>
+    <dimen name="logo_offset">20dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+    <dimen name="menu_translation">-25dp</dimen>
+    <dimen name="title">30sp</dimen>
+    <dimen name="profile_offset_y">70dp</dimen>
+    <dimen name="picture_dimension">96dp</dimen>
+    <dimen name="profile_offset_x">30dp</dimen>
+    <dimen name="profile_button_margin">10dp</dimen>
+    <dimen name="picture_width">1dp</dimen>
+    <dimen name="subtitle">25sp</dimen>
+    <dimen name="main_layout_offset_x">352dp</dimen>
+    <dimen name="main_layout_offset_y">352dp</dimen>
+    <dimen name="layout_width_1">160dp</dimen>
+    <dimen name="margin_leaderboard_ver">200dp</dimen>
+    <dimen name="text_size_stat">18sp</dimen>
+    <dimen name="layout_stat_w">354dp</dimen>
+    <dimen name="layout_stat_h">44dp</dimen>
+    <dimen name="layout_num_margin_v">120dp</dimen>
+    <dimen name="textView_w">57dp</dimen>
+    <dimen name="layout_leader_w">210dp</dimen>
+    <dimen name="layout_leader_padding">10dp</dimen>
+    <dimen name="player_padding">5dp</dimen>
+    <dimen name="layout_score_w">357dp</dimen>
+    <dimen name="article_1_margin_y">150dp</dimen>
+    <dimen name="article_dim">60dp</dimen>
+    <dimen name="button_margin_left">60dp</dimen>
+    <dimen name="button_margin_right">7dp</dimen>
+
+
+</resources>

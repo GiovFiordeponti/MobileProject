@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name" translatable="false">Pong Challenge</string>
+    <!-- notification channel -->
+    <string name="default_notification_channel_id" translatable="false">default_channel</string>
+    <string name="fcm_message" translatable="false">message</string>
+    <string name="default_notification_channel_name" translatable="false">notification_channel_name</string>
+    <string name="msg_token_fmt" translatable="false"></string>
+    <string name="notifications_friend_body">%1$s has sent you a friend a request.</string>
+    <string name="notifications_friend_topic">Friend Request</string>
+    <string name="notifications_game_body">%1$s has sent you a game a request.</string>
+    <string name="notifications_game_topic">Game Request</string>
+    <string name="notifications_accept_body">%1$s has accepted your request.</string>
+    <string name="notifications_accept_topic">Request Accepted</string>
+    <!-- game -->
+    <string name="player1" translatable="false">player1</string>
+    <string name="player2" translatable="false">player2</string>
+    <string name="currentPlayer" translatable="false">currentPlayer</string>
+    <!-- Strings related to auth -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_google_sign_up">Sign Up with </string>
+    <string name="action_sign_up_short">Sign Up</string>
+    <string name="terms_text">I agree to the terms of %1$s</string>
+    <string name="terms_link">Privacy Policy</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="password_do_not_match">Confirm Password do not match</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">"Login"</string>
+    <string name="new_user">Don\'t have an account?</string>
+    <!-- Home Fragment -->
+    <string name="or">Or</string>
+    <string name="not_register">Don\'t have an account?</string>
+    <string name="play">Play</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <!-- Menu  -->
+    <string name="home" translatable="false">Home</string>
+    <string name="stats">Statistics</string>
+    <string name="friends">Friends</string>
+    <string name="profile">Profile</string>
+    <string name="shop">Shop</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <!--Profile-->
+    <string name="money">Money: %1$d</string>
+    <string name="LabelFriendCode">Your Friend Code</string>
+    <string name="shareCode">Share Your Code</string>
+    <string name="addPhoto">Add Your Photo</string>
+    <!-- settings -->
+    <string name="music">Music</string>
+    <string name="sound_effect">Sound Effects</string>
+    <string name="vibration">Vibration</string>
+    <string name="notification">Notification</string>
+    <string name="Skin" translatable="false">Skin</string>
+    <string name="summary_table">Choose a skin for your table</string>
+    <string name="summary_rackets">Choose a skin for your rackets</string>
+    <string name="summary_ball">Choose a skin for your ball</string>
+
+    <string name="attachment_summary_off" translatable="false">Off</string>
+    <string name="attachment_summary_on" translatable="false">On</string>
+    <string name="attachment_title">Another Title</string>
+    <string name="sound_title">Sounds</string>
+    <string name="action_google_sign_in">Sign In with</string>
+    <!-- home fragment -->
+    <string name="welcome_back">Welcome back</string>
+    <string name="challenge_ready">Are you ready for a new challenge?</string>
+    <string name="invite_friends">Invite your friends to play!</string>
+    <string name="invite_friend">Invite a Friend</string>
+    <string name="play_friends">Play with your friends</string>
+    <string name="chooser_title">Invite Friends</string>
+    <string name="invite_friends_intent">"Join me on Pong Challenge! Download it here: "</string>
+    <string name="app_url" translatable="false">https://github.com/GiovFiordeponti/MobileProject</string>
+    <!-- profile fragment -->
+    <string name="share_code_intent">Hey! This is my friends code on PongChallenge:</string>
+    <string name="intent_profile_title">Share Friends Code</string>
+    <!--Statistic-->
+    <string name="wins">Wins</string>
+    <string name="loses">Loses</string>
+    <string name="leader_boarder">Leader Board</string>
+    <!--Shop-->
+    <string name="ball">Balls</string>
+    <string name="ball_1_name">Soccer Ball</string>
+    <string name="ball_1_price">Money:10</string>
+    <string name="buy_button">Buy</string>
+    <string name="ball_2_name">Furry Ball</string>
+    <string name="ball_2_price">Money:20</string>
+    <string name="ball_3_name">Moon Ball</string>
+    <string name="ball_3_price">Money:30</string>
+    <string name="racket">Rackets </string>
+    <string name="racket_1_name">Net Soccer </string>
+    <string name="racket_1_price">Money:10</string>
+    <string name="racket_2_name">Furry Rackets </string>
+    <string name="racket_2_price">Money:20</string>
+    <string name="racket_3_name">Shuttle Rackets </string>
+    <string name="table">Tables </string>
+    <string name="table_1_name">Soccer Field</string>
+    <string name="table_2_name">Basket Field</string>
+    <string name="table_3_name">Space Field</string>
+    <!-- nickname dialog -->
+    <string name="username_hint">Write here your username</string>
+    <string name="dialog_nickname_title">Choose a Nickname</string>
+    <string name="dialog_nickname_subtitle">Before playing, you have to choose a nickname</string>
+    <string name="msg_username_updated">Username updated:</string>
+    <!-- find game dialog -->
+    <string name="dialog_play_subtitle">We are looking for a game</string>
+    <!-- notifications dialog -->
+    <string name="dialog_requests_title">Friend Requests</string>
+    <string name="dialog_requests_subtitle">You have %1$d requests.</string>
+    <!-- game activity -->
+    <string name="dialog_play_title">Lets Play!</string>
+    <string name="game_warning">Warning</string>
+    <string name="game_warning_msg">If you leave this game, you won\'t be able to join again this match. Are you sure?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="game_over" translatable="false">Game Over</string>
+    <string name="button_play_start">GO</string>
+    <string name="take_picture">Take a picture</string>
+    <string name="take_library">Choose from library</string>
+    <string name="dialog_camera_title">Change Picture</string>
+    <string name="dialog_camera_subtitle">Select a choice from below</string>
+    <string name="toast_picture_error">Error while loading picture. Please retry</string>
+    <string name="toast_picture_updated">Picture updated correctly</string>
+    <string name="add_friend">Add a friend</string>
+    <string name="request_hint">Write here a friend\'s code</string>
+    <string name="dialog_requests_send_subtitle">Write the 12 length numeric code of your friend</string>
+    <string name="dialog_requests_send_title">Add a Friend</string>
+    <string name="error_request">Impossible to send request. Please retry</string>
+    <string name="request_sent">Friend Request successfully sent</string>
+    <string name="error_request_not_found">Can\'t find any user with this friend code</string>
+    <string name="error_request_conflict">You have already sent a request to this particular user</string>
+    <string name="no_friends">"You still have no friends! "</string>
+    <string name="dialog_game_title">Game Requests</string>
+    <string name="accept">Accept</string>
+    <string name="refuse">Refuse</string>
+    <string name="error_request_accept">There was an error processing your response. Please retry.</string>
+    <string name="request_game_sent">Game request sent successfully</string>
+    <string name="request_game_error">Impossible to send this game request. Please retry</string>
+    <string name="dialog_play_friends_subtitle">You have %1$d game matches.</string>
+    <string name="dialog_play_friends_title">Play with your friends</string>
+    <string name="close">Close</string>
+    <string name="loading">Waiting the other player to be ready</string>
+    <string name="friend_code_label">Friend Code:</string>
+    <string name="win_label">You Win!</string>
+    <string name="lose_label">You Lose!</string>
+    <string name="cancel_label">Game Canceled!</string>
+    <string name="share_victory">Share Your Result</string>
+    <string name="friend_text_copied">%s friend code has been copied to your clipboard</string>
+    <string name="share_result">"The match between %s and %s has ended with the following result: %d - %d "</string>
+    <string name="default_table_file" translatable="false">default_table.png</string>
+    <string name="table_2_file" translatable="false">basket_field.jpg</string>
+    <string name="table_1_file" translatable="false">soccer_field.jpg</string>
+    <string name="table_3_file" translatable="false">space_field.jpg</string>
+    <string name="ready">are you ready for the challenge?</string>
+    <string name="enemy">Adversary:</string>
+    <string name="copy">Copy</string>
+    <string name="ready_2">Ready</string>
+    <string name="start_match">Click on READY to start the match</string>
+    <string name="back_home">Back To Home</string>
+    <string name="statistics">Statistics</string>
+    <string name="welcome_2">Hi there!Nice to see you again</string>
+    <string name="ball_default_name">Classic</string>
+    <string name="ball_default_name_file" translatable="false">default_ball.png</string>
+    <string name="ball_1_name_file" translatable="false">ball_1.jpg</string>
+    <string name="ball_2_name_file" translatable="false">ball_rackets_2.png</string>
+    <string name="ball_3_name_file" translatable="false">ball_3.png</string>
+    <string name="balls_key" translatable="false">balls_key</string>
+    <string name="tables_key" translatable="false">tables_key</string>
+    <string name="default_table">Classic</string>
+    <string name="rackets_key" translatable="false">rackets_key</string>
+    <string name="ball_setting_title">Balls</string>
+    <string name="rackets_title">Rackets</string>
+    <string name="tables_title">Tables</string>
+    <string name="default_racket">Classic</string>
+    <string name="default_racket_file" translatable="false">default_racket.png</string>
+    <string name="racket_1_name_file" translatable="false">racket_1.jpg</string>
+    <string name="racket_2_name_file" translatable="false">ball_rackets_2.png</string>
+    <string name="racket_3_name_file" translatable="false">rackets_3.png</string>
+
+</resources>

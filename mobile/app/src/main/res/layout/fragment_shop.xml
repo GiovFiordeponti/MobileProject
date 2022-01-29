@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    tools:context=".fragments.ShopFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="700dp"
+        android:fadeScrollbars="false">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:id="@+id/layout_ball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/win_label"
+                    style="@style/titleStyle"
+                    android:layout_width="@dimen/layout_width_1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ball"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_ball_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="100dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ball_1"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/ball_1" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_ball_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_ball_1"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ball_1_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_ball_1"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ball_1_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ball_1_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_ball_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="170dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ball_2"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/ball_rackets_2" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_ball_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_2"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ball_2_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_ball_2"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ball_2_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ball_2_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_ball_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="240dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ball_3"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/ball_3" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_ball_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_3"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ball_3_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_ball_3"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ball_3_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ball_3_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_rackets"
+                android:layout_width="@dimen/layout_stat_w"
+                android:layout_height="@dimen/layout_stat_h"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="310dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rackets_label"
+                    style="@style/titleStyle"
+                    android:layout_width="@dimen/layout_width_1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/racket"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_racket_1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="360dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/racket_1"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/racket_1" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_racket_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_racket_1"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racket_1_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_racket_1"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racket_1_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/racket_1_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_racket_2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="430dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rackets_2"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/ball_rackets_2" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_racket_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_racket_2"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racket_2_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_racket_2"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racket_2_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/racket_2_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_racket_3"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="500dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/racket_3"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/rackets_3" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_racket_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_racket_3"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racket_3_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_racket_3"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ball_3_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/racket_3_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_table_1"
+                android:layout_width="@dimen/layout_stat_w"
+                android:layout_height="@dimen/layout_stat_h"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="570dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/table_label"
+                    style="@style/titleStyle"
+                    android:layout_width="@dimen/layout_width_1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/table"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_table_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="620dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/table_1"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/soccer_field" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_table_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_table_1"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/table_1_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_table_1"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/racket_1_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/table_1_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_table_2"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="690dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/table_2"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/basket_field" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_table_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_table_2"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/table_2_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_table_2"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/racket_2_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/table_2_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/article_table_3"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginHorizontal="@dimen/profile_offset_x"
+                android:layout_marginVertical="760dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/table_3"
+                    android:layout_width="@dimen/article_dim"
+                    android:layout_height="@dimen/article_dim"
+                    app:srcCompat="@drawable/space_field" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_money_table_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_article_table_3"
+                        style="@style/article_Style"
+                        android:layout_width="@dimen/layout_width_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/table_3_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/price_table_3"
+                        style="@style/article_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ball_3_price"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/table_3_button"
+                    style="@style/PongButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin_left"
+                    android:layout_marginTop="@dimen/button_margin_right"
+                    android:text="@string/buy_button" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

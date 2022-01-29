@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_info"
+        android:layout_marginHorizontal="@dimen/profile_offset_x"
+        android:layout_marginVertical="@dimen/profile_offset_y"
+        layout="@layout/profile_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_friend_code"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/layout_friend_code">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/asap_medium_italic"
+            android:layout_marginBottom="8dp"
+            android:text="@string/LabelFriendCode"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/subtitle"/>
+
+        <TextView
+            android:id="@+id/text_friend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap_medium_italic"
+            android:layout_marginBottom="8dp"
+            android:text=""
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/textView"/>
+
+        <Button
+            android:id="@+id/share_button"
+            style="@style/PongButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:text="@string/shareCode"
+            android:layout_marginTop="@dimen/profile_button_margin"/>
+    </LinearLayout>
+
+
+</FrameLayout>

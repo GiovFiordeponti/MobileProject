@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:translationY="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_friend_profile"
+            android:layout_width="74dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/picture_width" />
+
+        <TextView
+            android:id="@+id/textNotificationInfo"
+            style="@style/article_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingTop="5dp"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_accept"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:drawableTop="@drawable/ic_baseline_check_circle_24"
+            android:text="@string/accept" />
+
+        <Button
+            android:id="@+id/button_refuse"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refuse"
+            android:drawableTop="@drawable/ic_baseline_block_24"/>
+    </LinearLayout>
+
+</LinearLayout>

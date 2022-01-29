@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_label"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.StatsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_stat"
+        android:layout_width="@dimen/layout_stat_w"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/profile_offset_x"
+        android:layout_marginVertical="@dimen/profile_offset_y"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/win_label"
+                android:layout_width="@dimen/layout_width_1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rye"
+                android:text="@string/wins"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title" />
+            <TextView
+                android:id="@+id/win_numbers"
+                android:layout_width="@dimen/layout_width_1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rye"
+                android:textAlignment="center"
+                android:text=""
+                android:textColor="@color/loseColor"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lose_label"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rye"
+                android:text="@string/loses"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title" />
+
+
+            <TextView
+                android:id="@+id/lose_numbers"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rye"
+                android:textAlignment="center"
+                android:text=""
+                android:textColor="@color/textView"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/leader_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/leader_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/asap_medium_italic"
+            android:paddingBottom="@dimen/layout_leader_padding"
+            android:text="@string/leader_boarder"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/textView"
+            android:textSize="@dimen/text_size_stat"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"></ProgressBar>
+
+    <TextView
+        android:id="@+id/textNoFriends"
+        style="@style/article_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_friends"
+        android:visibility="gone"></TextView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/statsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
